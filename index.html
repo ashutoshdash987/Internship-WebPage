@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern - praan</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./Index_Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar Start-->
+    <div class="pop" id="popupp"></div>
+    <div class="popup" id="popup">
+        <img src="./tick.png" class="img" width="80px">
+        <button class="cross" onclick="closee()"> &Cross;</button>
+        <h2 id="put">SignUp</h2>
+        <label>Name *</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name" id="name"><br><br><br>
+        <label>Mail *</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="mail" id="mail"><br><br><br>
+        <label>Number *</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="phn" id="phn"><br><br><br>
+        <label>Password *</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="pass" id="pass"><br><br><br>
+        <button id="button" class="bitton" onclick="login()">SignUp</button>
+        <p class="demo" id="demo"></p>
+</div>
+    <div class="arambh">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./logo.png" alt="" width="70px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="coloor"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto"> <!--mb-2 mb-lg-0-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                               About Us
+                            </a>
+                            <ul class="dropdown-menu news">
+                                <div class="l8">
+                                <li><a class="dropdown-item" href="#">GIFT Group</a></li>
+                                <li><a class="dropdown-item" href="#">Mission And Vision</a></li>
+                                <li><a class="dropdown-item" href="#">Leadership</a></li>
+                            </div>
+                            <div class="lgara"></div>
+                                <div class="r8">
+                                <li><a class="dropdown-item" href="#">Impact</a></li>
+                                <li><a class="dropdown-item" href="#">Building</a></li>
+                                <li><a class="dropdown-item" href="#">Breakthroughs</a></li>
+                            </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Bussinesses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Habitat
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Resedential</a></li>
+                                      <li><a class="dropdown-item" href="#">Commercial</a></li>
+                                      
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Healthcare
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">OMNI Hospitals</a></li>
+                                      <li><a class="dropdown-item" href="#">OMNI Giggles</a></li>
+                                      <li><a class="dropdown-item" href="#">Merge IHPL & IHCPL</a></li>
+                                      <li><a class="dropdown-item" href="#">Scrutinizer Report - Meeting of secured creditors</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">Hospitality</a></li>
+                                  <li class="nav-item dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Incubation
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Boston Living</a></li>
+                                      <li><a class="dropdown-item" href="#">Assetmonk</a></li>
+                                      <li><a class="dropdown-item" href="#">Praan</a></li>
+                                      <li><a class="dropdown-item" href="#">Sepu</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Life Sciences
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">GIFT - Lifesciences</a></li>
+                                      <li><a class="dropdown-item" href="#">GIFT - Renovis Labs</a></li>
+                                    </ul>
+                                  </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                NewsRoom
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">In Media</a></li>
+                                <li><a class="dropdown-item" href="#">Announcments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Carrear
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--  Navbar End-->
+        <div class="second">
+            <h2>Get The Care You deserve</h2>
+            <div class="seconddiv">
+                <h6>We Believe in mental health is as valuable as physical health</h6>
+                <h6>and so we created this platform where people can seek help</h6>
+                <h6>from professional therapists</h6>
+            </div>
+            <form action="" method=""> <a href="#meeting"><button>
+                    <h6> Know More</h6>
+                </button></a></form>
+        </div>
+
+        <div class="boxia"><a href="#meeting">
+        <span></span>
+        <span></span>
+        <span></span></a>
+    <span></span></div>
+    </div>
+    <!-- Arambh ends here -->
+    <!-- meeting starts here -->
+    <div class="meeting" id="meeting">
+        <p class="flexu" id="flexu"><span>L</span>orem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda vitae
+            repudiandae ratione quisquam inventore mollitia doloribus temporibus explicabo distinctio sit reprehenderit
+            eaque at quidem labore excepturi deserunt ea, commodi ad natus vel maxime perferendis quaerat odio?
+            Voluptate illo pariatur fuga labore, quisquam culpa debitis aspernatur corrupti atque praesentium tempore
+            quaerat. orem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque cupiditate totam beatae
+            consectetu
+            ab, debitis temporibus quae non sit accusamus earum aliquam ducimus excepturi repudiandae id delectus, eaque
+            veritatis doloribus dolor facere? Explicabo tenetur id necessitatibus reiciendis odio doloremque dolor
+            voluptatum unde itaque praesentium qui sit animi fugit at fugiatcupiditate doloribus, veritatis non natus
+        </p>
+        <img src="./meeting.jpg" alt="" class="flexu" id="meeting">
+    </div>
+    <!-- meeting ends here -->
+    <!-- logos starts here -->
+    <div class="logos" id="logos">
+        <div class="lu"> <img src="./lagua1.jpg" alt="" srcset="" class="lagua1">
+            <p>To create about awarness about emotional wellbeing and educate about mental illness and prevention</p>
+        </div>
+        <div class="lu"><img src="./lagua2.jpg" alt="" srcset="" class="lagua2">
+            <p>To eradicate the sigma associated with mental illness</p>
+        </div>
+        <div class="lu"><img src="./lagua3.jpg" alt="" srcset="" class="lagua3">
+            <p>To create a thriving community of compassionate indivisual who will assist those in need of emotional
+                hand holding</p>
+        </div>
+    </div>
+    <!-- logos ends here -->
+     <!-- flex starts here -->
+    <div class="flex">
+        <div class="box1 box">
+            <h3>Give a Therapy Program</h3>
+            <p>For some individuals its hard to come forward and seek help due to many reasons like lackof awarness,
+                stigma even financial problems. This program gives you an oportunity to help your loved ones heal</p>
+            <form action="" method="dialog"><button>Know More</button></form>
+        </div>
+        <div class="box2 box">
+            <h2>Hear & Now</h2>
+            <h6>A 24x7 Distress Helpline</h6>
+            <p>You know how sometimes you are so overwhelmed with emotions and you want to talk to someone but think no
+                one will understand. So you let it sit inside you? We are that someone. Let it all out. We don't just
+                hear, We listen without any judgment. Reach out to us at any time</p>
+            <h4>12345678910</h4>
+        </div>
+    </div>
+    <!-- flex ends here -->
+    <!-- flex2 starts here -->
+    <div class="flex2">
+        <div class="box3 boxx">
+            <h3>Volunteer</h3>
+            <p>In this fact places life, We need amiable individuals who listen to others with empathy, because it is
+                said that an ear that listens can be a medicine for a heart that hurts. Become a mental health warrior
+                with Praan and speak heart to heart</p>
+            <form action="" method="dialog"><button>Sign Up</button></form>
+        </div>
+    </div>
+    <!-- flex2 ends here -->
+    <!-- testimonial starts here -->
+    <div class="box4 boxx">
+        <h2>Testimonials</h2>
+        <h3>Praan</h3>
+        <div id="carouselExampleAutoplaying" class="carousel slide slider" data-bs-ride="carousel">
+            <div class="carousel-inner one">
+                <div class="carousel-item active two">
+                    <img src="./image1.png" class="img1" alt="...">
+                    <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam quibusdam
+                        deleniti facilis assumenda nostrum hic quo culpa doloribus nulla, facere iure. Ea, excepturi?
+                        Ullam perspiciatis, rerum placeat magnam provident pariatur nobis voluptates, odit nemo ipsum
+                        quisquam reiciendis voluptatibus. Delectus expedita veritatis inventore sunt dolorem nulla
+                        adipisci mollitia a voluptatum reprehenderit accusamus maxime minima in, corporis rerum sit
+                        nostrum aut. Consequuntur, delectus maiores. Molestiae totam quos harum placeat praesentium
+                        illum vitae fugiat reprehenderit nulla? Minima expedita non quod aspernatur voluptas eaque eum
+                        similique, neque nobis veniam ipsam dolore iusto deleniti illo eius quam voluptates quia quidem.
+                    </p>
+                </div>
+                <div class="carousel-item itemm">
+                    <img src="./image2.png" class="" alt="...">
+                    <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam quibusdam
+                        deleniti facilis assumenda nostrum hic quo culpa doloribus nulla, facere iure. Ea, excepturi?
+                        Ullam perspiciatis, rerum placeat magnam provident pariatur nobis voluptates, odit nemo ipsum
+                        quisquam reiciendis voluptatibus. Delectus expedita veritatis inventore sunt dolorem nulla
+                        adipisci mollitia a voluptatum reprehenderit accusamus maxime minima in, corporis rerum sit
+                        nostrum aut. Consequuntur, delectus maiores. Molestiae totam quos harum placeat praesentium
+                        illum vitae fugiat reprehenderit nulla? Minima expedita non quod aspernatur voluptas eaque eum
+                        similique, neque nobis veniam ipsam dolore iusto deleniti illo eius quam voluptates quia quidem.
+                    </p>
+                </div>
+                <div class="carousel-item itemmm">
+                    <img src="./glucian.png" class="" alt="...">
+                    <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam quibusdam
+                        deleniti facilis assumenda nostrum hic quo culpa doloribus nulla, facere iure. Ea, excepturi?
+                        Ullam perspiciatis, rerum placeat magnam provident pariatur nobis voluptates, odit nemo ipsum
+                        quisquam reiciendis voluptatibus. Delectus expedita veritatis inventore sunt dolorem nulla
+                        adipisci mollitia a voluptatum reprehenderit accusamus maxime minima in, corporis rerum sit
+                        nostrum aut. Consequuntur, delectus maiores. Molestiae totam quos harum placeat praesentium
+                        illum vitae fugiat reprehenderit nulla? Minima expedita non quod aspernatur voluptas eaque eum
+                        similique, neque nobis veniam ipsam dolore iusto deleniti illo eius quam voluptates quia quidem.
+                    </p>
+                </div>
+            </div>
+            <button class="carousel-control-prev btnl" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btnr" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="first">
+            <a href="#"><img src="./logo.png" alt="" width="70px"></a>
+            <!-- <div class="link"> -->
+            <h5>QUICK LINKS</h5>
+            <div class="gara"></div>
+            <ul class="Nbos">
+                <l1><a href="#">Us</a></l1>
+                <l1><a href="#">Impact</a></l1>
+                <l1><a href="#">Innovate</a></l1>
+                <l1><a href="#">Habitat</a></l1>
+                <l1><a href="#">Healthcare</a></l1>
+                <l1><a href="#">Incubate</a></l1>
+            </ul>
+            <ul class="bos">
+                <l1><a href="#">Boston Living</a></l1>
+                <l1><a href="#">Hospitality</a></l1>
+                <l1><a href="#">AssetMonk</a></l1>
+                <l1><a href="#">Praan</a></l1>
+                <l1><a href="#">Careers</a></l1>
+                <l1><a href="#">Contact</a></l1>
+            </ul>
+        <!-- </div> -->
+            <p id="g">Gandhi Institute For Technology Pvt. Ltd <br>
+                plot no 2484, Gangapada <br>Bhubaneswar <br>Odisha -751012</p>
+                <div class="imu"><img src="./cal.jpg" alt="" srcset="" class="lastimu"><img src="./mal.jpg" alt="" srcset="" class="lastimu"><img src="./gmal.jpg" class="lastimu" alt="" srcset=""></div>
+            <div class="cntn">
+                12345678 <br> gift.edu.in <br> GIFT Bhubaneswar
+            </div>
+
+        </div>
+        <div class="last">
+            <div class="copy">
+            &copy; GIFT 2023</div>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">SiteMap</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let x = document.getElementById("popupp")
+        let y = document.getElementById("popup")
+      setTimeout(() => {
+        x.classList.add("show")
+            
+        y.classList.add("show")
+      }, 5000);
+
+        function closee(){
+            x.classList.remove("show")
+            y.classList.remove("show")
+        }
+        function login(){
+            let name = document.getElementById("name").value
+            let mail = document.getElementById("mail").value
+            let pass = document.getElementById("pass").value
+            let phn = document.getElementById("phn").value
+
+            console.log(name)
+
+            if (name != "" && mail != "" && pass != "" && phn!=""){
+                document.getElementById("demo").innerHTML = "* Confirmation mail will be sent to  " + mail
+
+                setTimeout(() => {
+                x.classList.remove("show")
+                y.classList.remove("show")
+            }, 3000);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
